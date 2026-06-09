@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import styles from './ProductPage.module.css'
 
-const DASHBOARD_URL = 'https://dashboard.trevoratech.com'
+const DASHBOARD_URL = 'https://app.trevoratech.com'
 
 const specs = [
   { value: '230ms', label: 'Avg. Execution Time' },
