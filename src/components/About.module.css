@@ -1,0 +1,128 @@
+.section {
+  background: #000;
+  padding: 120px 40px;
+  border-top: 1px solid #412D15;
+  overflow-x: hidden;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8A96E;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(36px, 4vw, 56px);
+  color: #E1DCC9;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+
+.accent {
+  color: #C8A96E;
+}
+
+.body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #9E9880;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #C8A96E;
+  letter-spacing: 0.04em;
+  transition: gap 0.2s ease, color 0.2s ease;
+  gap: 6px;
+}
+
+.cta:hover {
+  color: #D4A853;
+  gap: 10px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right {
+  width: 100%;
+  min-width: 0;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: #412D15;
+  border: 1px solid #412D15;
+}
+
+.stat {
+  background: #1F150C;
+  padding: 48px 36px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.stat:hover {
+  background: #0d0a06;
+}
+
+.statValue {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(40px, 5vw, 60px);
+  color: #C8A96E;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9E9880;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .section { padding: 80px 24px; }
+  .inner { grid-template-columns: 1fr; gap: 48px; }
+  .left { align-items: flex-start; }
+}
+
+@media (max-width: 560px) {
+  .statGrid { grid-template-columns: 1fr; }
+  .stat { padding: 28px 24px; }
+  .statValue { font-size: clamp(32px, 8vw, 60px); }
+  .statLabel { font-size: 11px; letter-spacing: 0.04em; }
+  .title { font-size: clamp(28px, 7vw, 56px); }
+}

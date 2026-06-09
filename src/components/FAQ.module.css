@@ -1,0 +1,129 @@
+.section {
+  background: #000;
+  padding: 120px 40px;
+  border-top: 1px solid #1F150C;
+  overflow-x: hidden;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8A96E;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(32px, 4vw, 52px);
+  color: #E1DCC9;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #9E9880;
+}
+
+/* ── Accordion ── */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  border-top: 1px solid #1F150C;
+  transition: border-color 0.3s;
+}
+
+.item:last-child {
+  border-bottom: 1px solid #1F150C;
+}
+
+.itemOpen {
+  border-top-color: #412D15;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(15px, 1.6vw, 17px);
+  font-weight: 600;
+  color: #E1DCC9;
+  transition: color 0.2s;
+}
+
+.question:hover {
+  color: #C8A96E;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #412D15;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #C8A96E;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.itemOpen .icon {
+  background: rgba(200, 169, 110, 0.08);
+  border-color: #C8A96E;
+}
+
+.answerWrap {
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.answer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #9E9880;
+  padding-bottom: 28px;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .section { padding: 80px 24px; }
+}
+
+@media (max-width: 480px) {
+  .question { padding: 20px 0; font-size: 15px; }
+  .header { margin-bottom: 40px; }
+}

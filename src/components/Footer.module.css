@@ -1,0 +1,297 @@
+.footer {
+  background: #000;
+  border-top: 1px solid #412D15;
+  padding: 80px 40px 0;
+  overflow-x: hidden;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ── Newsletter ── */
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 52px 0;
+  border-bottom: 1px solid #412D15;
+  margin-bottom: 60px;
+}
+
+.nlLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8A96E;
+  margin-bottom: 14px;
+}
+
+.nlTitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: #E1DCC9;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.nlDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #9E9880;
+}
+
+.nlForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nlInputWrap {
+  display: flex;
+  border: 1px solid #412D15;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.nlInputWrap:focus-within {
+  border-color: #C8A96E;
+}
+
+.nlInput {
+  flex: 1;
+  min-width: 0;
+  background: #000;
+  border: none;
+  outline: none;
+  padding: 13px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #E1DCC9;
+  cursor: none;
+}
+
+.nlInput::placeholder {
+  color: rgba(200, 169, 110, 0.28);
+}
+
+.nlBtn {
+  flex-shrink: 0;
+  padding: 13px 24px;
+  background: #C8A96E;
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.nlBtn:hover {
+  background: #D4A853;
+}
+
+.nlError {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #e07a5f;
+  margin: 0;
+}
+
+.nlNote {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #635947;
+  margin: 0;
+}
+
+.nlNoteLink {
+  color: #635947;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.nlNoteLink:hover {
+  color: #9E9880;
+}
+
+.nlSuccess {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border: 1px solid #412D15;
+  border-radius: 2px;
+  background: #0a0500;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+}
+
+.nlSuccessTitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #E1DCC9;
+  margin-bottom: 3px;
+}
+
+.nlSuccessDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: #9E9880;
+}
+
+/* ── Links grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #1F150C;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logoImg {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #9E9880;
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #412D15;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9E9880;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.social:hover {
+  border-color: #C8A96E;
+  color: #C8A96E;
+}
+
+.colTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #E1DCC9;
+  margin-bottom: 20px;
+}
+
+.colLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colLinks a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #9E9880;
+  transition: color 0.2s ease;
+}
+
+.colLinks a:hover {
+  color: #C8A96E;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #635947;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.bottomLinks a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #635947;
+  transition: color 0.2s ease;
+}
+
+.bottomLinks a:hover {
+  color: #9E9880;
+}
+
+.nvidaBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #635947;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 860px) {
+  .footer { padding: 60px 24px 0; }
+  .newsletter { grid-template-columns: 1fr; gap: 32px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 560px) {
+  .newsletter { padding: 40px 0; }
+  .grid { grid-template-columns: 1fr; }
+  .bottom { flex-direction: column; align-items: flex-start; }
+  .nlInputWrap { flex-direction: column; }
+  .nlBtn { width: 100%; padding: 13px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .nlInput { cursor: auto; }
+}

@@ -1,0 +1,137 @@
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 8000;
+  background: #1F150C;
+  border-top: 1px solid #412D15;
+  box-shadow: 0 -16px 64px rgba(0, 0, 0, 0.6);
+  animation: slideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* ── Left: icon + text ── */
+.left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #E1DCC9;
+  letter-spacing: 0.02em;
+}
+
+.desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9E9880;
+}
+
+.link {
+  color: #C8A96E;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #D4A853;
+}
+
+/* ── Action buttons ── */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btnDecline {
+  padding: 10px 22px;
+  background: transparent;
+  border: 1px solid #412D15;
+  color: #9E9880;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btnDecline:hover {
+  border-color: #9E9880;
+  color: #E1DCC9;
+}
+
+.btnAccept {
+  padding: 10px 22px;
+  background: #C8A96E;
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid #C8A96E;
+  border-radius: 2px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btnAccept:hover {
+  background: #D4A853;
+  transform: translateY(-1px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .actions {
+    width: 100%;
+  }
+  .btnDecline,
+  .btnAccept {
+    flex: 1;
+    text-align: center;
+  }
+}
