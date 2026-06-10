@@ -212,15 +212,15 @@ export default function ProductPage() {
             TrevoraX by TrevoraTech
           </div>
           <h1 className={styles.heroTitle}>
-            <span>ENTERPRISE</span>
-            <span className={styles.heroTitleOutline}>AUTOMATION</span>
+            <span>TREVORAX</span>
+            <span className={styles.heroTitleOutline}>ENTERPRISE</span>
           </h1>
           <p className={styles.heroSub}>
-            TrevoraX ties every ERP, CRM, and operation signal together so teams can see, govern, and automate complex workflows from one intelligent command plane.
+            TrevoraX is the intelligent enterprise automation platform that unifies ERP, CRM, and operations signals into one self-healing command plane.
           </p>
           <div className={styles.heroActions}>
             <a href={DASHBOARD_URL} target="_blank" rel="noreferrer" className={styles.btnPrimary}>
-              Visit TrevoraTech.com →
+              Explore TrevoraX →
             </a>
             <Link to="/" className={styles.btnGhost}>← Back to Overview</Link>
           </div>
