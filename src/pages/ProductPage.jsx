@@ -18,13 +18,13 @@ const steps = [
     num: '01',
     title: 'Ingest Every Enterprise Signal',
     desc: 'Collect and normalize data from ERP, CRM, service desks, databases, and event streams to create a consistent operations layer across distributed systems.',
-    features: ['Disparate system ingestion', 'Live workflow signal capture', 'Automatic schema harmonization', 'Event, REST, API, and webhook sources'],
+    features: ['Disparate system ingestion', 'Live workflow signal capture', 'Automatic schema harmonization with NVIDIA RAPIDS', 'Event, REST, API, and webhook sources'],
   },
   {
     num: '02',
     title: 'Analyze Process Dependencies',
     desc: 'Build optimized dependency graphs that reveal how work actually flows through your business — not just how it was designed to run.',
-    features: ['Graph-based process mapping', 'Bottleneck discovery', 'Process dependency visualization', 'Automated impact analysis'],
+    features: ['cuGraph-powered process mapping', 'Bottleneck discovery', 'Process dependency visualization', 'Automated impact analysis'],
   },
   {
     num: '03',
@@ -52,7 +52,7 @@ const modules = [
   {
     id: '02',
     title: 'AI Process Engine',
-    tagline: 'Real-time orchestration with Morpheus',
+    tagline: 'Real-time orchestration with NVIDIA Morpheus',
     desc: 'A continuous decision engine that listens to live system signals, prioritizes work, and routes automation across every business domain.',
     features: [
       'Stream-based workflow triggers',
@@ -66,7 +66,7 @@ const modules = [
   {
     id: '03',
     title: 'Business Rule Intelligence',
-    tagline: 'NeMo-powered reasoning',
+    tagline: 'NVIDIA NeMo reasoning',
     desc: 'A language-aware rule engine that turns corporate runbooks, compliance policies, and unstructured guidelines into executable workflow logic.',
     features: [
       'LLM-trained compliance rules',
@@ -80,7 +80,7 @@ const modules = [
   {
     id: '04',
     title: 'Deployment Fabric',
-    tagline: 'Triton & TensorRT optimized',
+    tagline: 'NVIDIA Triton & TensorRT optimized',
     desc: 'A unified production stack for AI models and automation pipelines that delivers low latency and high concurrency under enterprise load.',
     features: [
       'Multi-model ensemble routing',
