@@ -4,33 +4,33 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import styles from './ProductPage.module.css'
 
-const DASHBOARD_URL = 'https://app.trevoratech.com'
+const DASHBOARD_URL = 'https://TrevoraTech.com'
 
 const specs = [
-  { value: '230ms', label: 'Avg. Execution Time' },
-  { value: '99.97%', label: 'Platform Uptime' },
-  { value: '200+', label: 'Native Connectors' },
-  { value: '50M+', label: 'Daily Automations' },
+  { value: '230ms', label: 'Avg. Decision Latency' },
+  { value: '99.97%', label: 'Enterprise SLA Uptime' },
+  { value: '200+', label: 'Native ERP & CRM Connectors' },
+  { value: '50M+', label: 'Automations Executed Daily' },
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Connect Your Systems',
-    desc: 'Map every data source and endpoint in your organization through a single unified connector library — no custom middleware required.',
-    features: ['200+ pre-built connectors', 'REST, GraphQL & gRPC support', 'Custom API builder', 'Real-time webhooks & event streams'],
+    title: 'Ingest Every Enterprise Signal',
+    desc: 'Collect and normalize data from ERP, CRM, service desks, databases, and event streams to create a consistent operations layer across distributed systems.',
+    features: ['Disparate system ingestion', 'Live workflow signal capture', 'Automatic schema harmonization', 'Event, REST, API, and webhook sources'],
   },
   {
     num: '02',
-    title: 'Design Your Workflows',
-    desc: 'Build automation logic visually with the drag-and-drop Workflow Builder. Add AI decision nodes, conditional branches, and parallel execution paths.',
-    features: ['No-code visual canvas', 'AI decision & routing nodes', 'Version control & rollback', 'Collaborative real-time editing'],
+    title: 'Analyze Process Dependencies',
+    desc: 'Build optimized dependency graphs that reveal how work actually flows through your business — not just how it was designed to run.',
+    features: ['Graph-based process mapping', 'Bottleneck discovery', 'Process dependency visualization', 'Automated impact analysis'],
   },
   {
     num: '03',
-    title: 'Deploy & Scale',
-    desc: 'One-click deployment to production with automatic load balancing, failover, and real-time monitoring across every active workflow.',
-    features: ['One-click production deployment', 'Auto-scaling infrastructure', 'Live execution dashboards', 'Instant rollback on failure'],
+    title: 'Activate AI-Driven Automation',
+    desc: 'Trigger self-healing workflows, compliance-aware actions, and human approvals from a single operational brain that adapts to live conditions.',
+    features: ['Real-time decisioning', 'Rule-based and adaptive actions', 'LLM-driven business logic', 'Cross-system orchestration'],
   },
 ]
 
@@ -52,42 +52,42 @@ const modules = [
   {
     id: '02',
     title: 'AI Process Engine',
-    tagline: 'NVIDIA-accelerated intelligence',
-    desc: 'NVIDIA-accelerated inference layer that reads live data, predicts bottlenecks, and reroutes processes in real time.',
+    tagline: 'Real-time orchestration with Morpheus',
+    desc: 'A continuous decision engine that listens to live system signals, prioritizes work, and routes automation across every business domain.',
     features: [
-      'Predictive bottleneck detection',
-      'Real-time process rerouting',
-      'LLM-powered document extraction',
-      'Anomaly detection & alerts',
-      'Natural language workflow triggers',
+      'Stream-based workflow triggers',
+      'Automated path correction',
+      'Anomaly and exception handling',
+      'Real-time operational alerts',
+      'Self-healing process execution',
     ],
     icon: <AIIcon />,
   },
   {
     id: '03',
-    title: 'Analytics Hub',
-    tagline: 'Full-fidelity execution data',
-    desc: 'Full-fidelity dashboards tracking every workflow event — latency, throughput, error rates, cost per execution.',
+    title: 'Business Rule Intelligence',
+    tagline: 'NeMo-powered reasoning',
+    desc: 'A language-aware rule engine that turns corporate runbooks, compliance policies, and unstructured guidelines into executable workflow logic.',
     features: [
-      'Real-time execution dashboards',
-      'Latency & throughput metrics',
-      'Cost-per-automation tracking',
-      'Custom KPI & report builder',
-      'Export to Tableau & Power BI',
+      'LLM-trained compliance rules',
+      'Policy-to-action translation',
+      'Narrative analytics summaries',
+      'Context-aware decision support',
+      'Natural language workflow queries',
     ],
     icon: <AnalyticsIcon />,
   },
   {
     id: '04',
-    title: 'Integration Layer',
-    tagline: '200+ enterprise connectors',
-    desc: '200+ native connectors to SAP, Salesforce, ServiceNow, AWS, and any REST/GraphQL endpoint in your stack.',
+    title: 'Deployment Fabric',
+    tagline: 'Triton & TensorRT optimized',
+    desc: 'A unified production stack for AI models and automation pipelines that delivers low latency and high concurrency under enterprise load.',
     features: [
-      '200+ certified connectors',
-      'SAP, Salesforce & ServiceNow native',
-      'Custom connector SDK',
-      'OAuth 2.0 & API key auth',
-      'GraphQL, gRPC & SOAP support',
+      'Multi-model ensemble routing',
+      'GPU-accelerated inference',
+      'Predictable low-latency execution',
+      'Secure model hosting',
+      'Elastic enterprise scaling',
     ],
     icon: <IntegrationIcon />,
   },
@@ -114,8 +114,8 @@ const capabilities = [
       'Predictive process optimization',
       'Anomaly detection & alerting',
       'Natural language automation',
-      'Computer vision data extraction',
-      'Custom ML model integration',
+      'Business rule reasoning',
+      'Adaptive workflow orchestration',
     ],
   },
   {
@@ -209,19 +209,18 @@ export default function ProductPage() {
         <div className={styles.heroContent}>
           <div className={styles.heroBadge}>
             <span className={styles.heroBadgeDot} />
-            Platform Overview
+            TrevoraX by TrevoraTech
           </div>
           <h1 className={styles.heroTitle}>
-            <span>THE TREVORATECH</span>
-            <span className={styles.heroTitleOutline}>PLATFORM</span>
+            <span>ENTERPRISE</span>
+            <span className={styles.heroTitleOutline}>AUTOMATION</span>
           </h1>
           <p className={styles.heroSub}>
-            One unified command center for every automation across your enterprise.
-            Connect systems, deploy intelligence, and act at machine speed.
+            TrevoraX ties every ERP, CRM, and operation signal together so teams can see, govern, and automate complex workflows from one intelligent command plane.
           </p>
           <div className={styles.heroActions}>
             <a href={DASHBOARD_URL} target="_blank" rel="noreferrer" className={styles.btnPrimary}>
-              Launch Dashboard →
+              Visit TrevoraTech.com →
             </a>
             <Link to="/" className={styles.btnGhost}>← Back to Overview</Link>
           </div>
@@ -358,7 +357,7 @@ export default function ProductPage() {
             ))}
           </div>
           <p className={styles.intNote}>
-            + hundreds more via REST API, GraphQL, gRPC, and the custom connector SDK
+            + hundreds more via REST API, GraphQL, gRPC, and the custom connector SDK — ideal for SAP, Salesforce, Oracle, and bespoke apps.
           </p>
         </div>
       </section>
@@ -398,14 +397,14 @@ export default function ProductPage() {
       <section className={styles.ctaSection}>
         <div className={`${styles.ctaInner} reveal`}>
           <div className={styles.ctaGlow} aria-hidden="true" />
-          <p className={styles.ctaEyebrow}>Live Environment</p>
-          <h2 className={styles.ctaTitle}>Experience it in action.</h2>
+          <p className={styles.ctaEyebrow}>Live Experience</p>
+          <h2 className={styles.ctaTitle}>See TrevoraX live today.</h2>
           <p className={styles.ctaDesc}>
-            Your enterprise dashboard is ready. Log in to deploy your first workflow in under 10 minutes.
+            Explore the platform from the perspective of an enterprise operations leader and see how intelligence turns process overhead into opportunity.
           </p>
           <div className={styles.ctaActions}>
             <a href={DASHBOARD_URL} target="_blank" rel="noreferrer" className={styles.ctaBtn}>
-              Open Dashboard →
+              Visit TrevoraTech.com →
             </a>
             <Link to="/#contact" className={styles.ctaBtnGhost}>Talk to Sales</Link>
           </div>

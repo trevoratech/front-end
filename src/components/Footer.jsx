@@ -91,7 +91,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Product</h4>
             <ul className={styles.colLinks}>
-              <li><Link to="/product">Platform Overview</Link></li>
+              <li><Link to="/Product">Platform Overview</Link></li>
               <li><Link to="/#features">Features</Link></li>
               <li><Link to="/#how-it-works">Architecture</Link></li>
               <li><Link to="/#pricing">Pricing</Link></li>

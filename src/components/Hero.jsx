@@ -30,7 +30,7 @@ export default function Hero() {
           <br />Built for scale. Engineered for precision.
         </p>
         <div className={styles.actions}>
-          <Link to="/product" className={styles.btnPrimary}>
+          <Link to="/Product" className={styles.btnPrimary}>
             See the Platform →
           </Link>
           <a href="#how-it-works" className={styles.btnGhost}>

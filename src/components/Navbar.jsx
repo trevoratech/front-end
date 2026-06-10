@@ -78,7 +78,7 @@ export default function Navbar() {
         </ul>
 
         <div className={styles.right}>
-          <Link to="/product" className={styles.cta} onClick={close}>
+          <Link to="/Product" className={styles.cta} onClick={close}>
             TrevoraTech Platform
           </Link>
           <button

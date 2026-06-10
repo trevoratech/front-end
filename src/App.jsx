@@ -91,7 +91,7 @@ function App() {
       <CookieBanner />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/product" element={<ProductPage />} />
+        <Route path={["/Product", "/product"]} element={<ProductPage />} />
         <Route path="/docs" element={<DocsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
