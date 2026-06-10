@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import styles from './ProductPage.module.css'
 
-const DASHBOARD_URL = 'https://TrevoraTech.com'
+const DASHBOARD_URL = 'https://app.trevoratech.com'
 
 const specs = [
   { value: '230ms', label: 'Avg. Decision Latency' },
@@ -404,7 +404,7 @@ export default function ProductPage() {
           </p>
           <div className={styles.ctaActions}>
             <a href={DASHBOARD_URL} target="_blank" rel="noreferrer" className={styles.ctaBtn}>
-              Visit TrevoraTech.com →
+              Open Dashboard →
             </a>
             <Link to="/#contact" className={styles.ctaBtnGhost}>Talk to Sales</Link>
           </div>
