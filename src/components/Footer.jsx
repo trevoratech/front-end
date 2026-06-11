@@ -69,19 +69,19 @@ export default function Footer() {
               Intelligent enterprise automation. Built for the modern organization.
             </p>
             <div className={styles.socials}>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={styles.social}>
+              <a href="https://www.linkedin.com/company/trevoratech-innovations/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={styles.social}>
                 <LinkedInIcon />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter" className={styles.social}>
+              <a href="https://x.com/Trevoratech" target="_blank" rel="noreferrer" aria-label="X (Twitter)" className={styles.social}>
                 <TwitterIcon />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" className={styles.social}>
+              <a href="https://www.facebook.com/Trevoratech/" target="_blank" rel="noreferrer" aria-label="Facebook" className={styles.social}>
                 <FacebookIcon />
               </a>
-              <a href="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="Pinterest" className={styles.social}>
+              <a href="https://www.pinterest.com/trevoratech/" target="_blank" rel="noreferrer" aria-label="Pinterest" className={styles.social}>
                 <PinterestIcon />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" className={styles.social}>
+              <a href="https://www.youtube.com/@Trevoratech" target="_blank" rel="noreferrer" aria-label="YouTube" className={styles.social}>
                 <YouTubeIcon />
               </a>
             </div>
